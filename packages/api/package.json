@@ -4,9 +4,12 @@
     "dev": "bun run --hot src/index.ts"
   },
   "dependencies": {
-    "hono": "4.12.8"
+    "@hono/zod-openapi": "1.2.2",
+    "@scalar/hono-api-reference": "0.10.3",
+    "hono": "4.12.8",
+    "zod": "catalog:"
   },
   "devDependencies": {
-    "@types/bun": "workspace:"
+    "@types/bun": "catalog:"
   }
 }
