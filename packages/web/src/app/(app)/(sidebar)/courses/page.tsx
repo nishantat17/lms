@@ -1,7 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import CourseCard from "./_components/course-card";
 
-export default function Test() {
+export default function Courses() {
   return (
     <div>
       <main className="max-w-5xl mx-auto py-10 px-4">
