@@ -1,15 +1,27 @@
 {
   "name": "@lms/api",
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/index.ts",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check"
   },
   "dependencies": {
     "@hono/zod-openapi": "1.2.2",
     "@scalar/hono-api-reference": "0.10.3",
+    "better-auth": "catalog:",
+    "drizzle-orm": "0.45.1",
     "hono": "4.12.8",
+    "pg": "8.20.0",
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@types/bun": "catalog:"
+    "@dotenvx/dotenvx": "catalog:",
+    "@types/bun": "catalog:",
+    "@types/pg": "8.20.0",
+    "drizzle-kit": "0.31.10",
+    "oxfmt": "catalog:",
+    "oxlint": "catalog:"
   }
 }
